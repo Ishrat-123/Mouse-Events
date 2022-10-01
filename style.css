@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: rgb(114, 234, 250);
+    font-family:'Trebuchet MS';
+    
+}
+
+.mouse-event{
+    border: solid 2px rgb(5, 80, 99);
+    margin:40px;
+    min-width: 160px;
+    min-height: 80px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    
+}
+
+.mouse-event h4{
+    position: absolute;
+    top: -50px;
+    font-size: 16px;
+    left:50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-weight: 100;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+.container{
+    display:flex;
+    text-align: center;
+}
+
+@media(max-width:500px){
+    .container{
+        flex-direction: column;
+    }
+
+}
+
